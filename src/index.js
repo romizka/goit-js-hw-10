@@ -11,8 +11,8 @@ const countryInfo = document.querySelector('.country-info');
 
 inputEl.addEventListener(
   'input',
-  debounce(async ev => {
-    const countryName = ev.target.value.trim();
+  debounce(async event => {
+    const countryName = event.target.value.trim();
 
     if (countryName === '') {
       countryListEl.innerHTML = '';
